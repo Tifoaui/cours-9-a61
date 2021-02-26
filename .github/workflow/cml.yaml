@@ -12,8 +12,8 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Your ML workflow goes here
-          pip install -r requirements.txt
-          python prod_regression.py
+        pip install -r requirements.txt
+        python prod_regression.py
           # Write your CML report
-          echo "## Metriques:" >> report.md
-          cat metrics.txt >> report.m
+        echo "## Metriques:" >> report.md
+        cat metrics.txt >> report.m
